@@ -1,23 +1,64 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Photography Portfolio | Faimida Mulla</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; background-color: #f4f4f4; }
-        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-        .gallery img { width: 300px; height: 200px; object-fit: cover; border-radius: 8px; }
-        h1 { color: #333; }
-    </style>
-</head>
-<body>
-    <h1>My Photography Journey 📷</h1>
-    <p>Specializing in Macro and Minimalist Mobile Photography.</p>
-    
-    <div class="gallery">
-        <p>Coming Soon: Amazing Macro Shots!</p>
-    </div>
 
-    <hr>
-    <p>Captured with high-stabilization mobile tech.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Photography</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>My Photography</h1>
+<nav>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Capturing Moments</h2>
+<p>Photography Portfolio</p>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/photo1.jpg" onclick="openLightbox(this.src)">
+<img src="images/photo2.jpg" onclick="openLightbox(this.src)">
+<img src="images/photo3.jpg" onclick="openLightbox(this.src)">
+<img src="images/photo4.jpg" onclick="openLightbox(this.src)">
+<img src="images/photo5.jpg" onclick="openLightbox(this.src)">
+<img src="images/photo6.jpg" onclick="openLightbox(this.src)">
+
+</div>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am a passionate photographer who loves capturing nature, people and urban life.</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: your@email.com</p>
+<p>Instagram: @yourhandle</p>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<footer>
+<p>© 2026 My Photography</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
